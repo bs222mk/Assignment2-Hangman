@@ -31,7 +31,6 @@ public class Hangman {
 				while(notCorrectWord && counter < totalguess) {
 					System.out.println("Number of Guesses left: " + (totalguess - counter));
 					System.out.println("Number of Guesses used: " + counter);
-					playerGuess(userGuess);
 					System.out.print("Enter your Guess letter: ");
 					System.out.println("\n" + "----------------------------------------------" + "\n");
 					char guess = sc.next().charAt(0);
@@ -78,12 +77,6 @@ public class Hangman {
 			}		
 		}
 		return true;
-	}
-
-	public static void playerGuess(char userGuess []) {
-		for (int i = 0; i < userGuess.length; i++)
-			System.out.print(userGuess[i] + " ");
-		System.out.println();
 	}
 
 }
